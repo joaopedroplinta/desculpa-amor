@@ -4,13 +4,11 @@ import Mensagem1 from './pages/Mensagem1';
 import Mensagem2 from './pages/Mensagem2';
 import Mensagem3 from './pages/Mensagem3';
 import TelaFinal from './pages/TelaFinal';
-import FloatingHearts from './components/FloatingHearts';
 
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <Router>
-        <FloatingHearts />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mensagem1" element={<Mensagem1 />} />
