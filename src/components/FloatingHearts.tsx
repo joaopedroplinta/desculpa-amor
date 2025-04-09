@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 const FloatingHearts = () => {
   const [hearts, setHearts] = useState<{ id: number; left: string; duration: number; size: number }[]>([]);
 
