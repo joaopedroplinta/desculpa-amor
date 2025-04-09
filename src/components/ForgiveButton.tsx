@@ -4,7 +4,7 @@ import { useWindowSize } from 'react-use';
 
 export default function ForgiveButton() {
   const [showConfetti, setShowConfetti] = useState(false);
-  const [setShowMessage] = useState(false);
+  const [, setShowMessage] = useState(false); // <- corrigido aqui
   const { width, height } = useWindowSize();
 
   const handleClick = () => {
@@ -35,8 +35,6 @@ export default function ForgiveButton() {
         >
           Sim, eu te perdoo 💖
         </button>
-
-        
       </div>
     </>
   );
